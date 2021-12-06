@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="body">
+    <div class="titleBar">Task Manager</div>
+    <nav class="commandBar">
+      <button class="commandBtn addTaskBtn">Add new task</button>
+      <button class="commandBtn clearAllTasksBtn">Clear all tasks</button>
+    </nav>
+    <main class="tasks">
+      <section class="task">
+        <div class="task__title">
+          <h1>Do washing</h1>
+          <button class="taskBtn deleteTaskBtn">x</button>
+        </div>
+        <p>06.12.2020</p>
+        <p class="task__description">Wash the dishes and table</p>
+      </section>
+      <section class="task">
+        <div class="task__title">
+          <h1>Do washing</h1>
+          <button class="taskBtn deleteTaskBtn">x</button>
+        </div>
+        <p>06.12.2020</p>
+        <p class="task__description">Wash the dishes and table</p>
+      </section>
+      <section class="task">
+        <div class="task__title">
+          <h1>Do washing</h1>
+          <button class="taskBtn deleteTaskBtn">x</button>
+        </div>
+        <p>06.12.2020</p>
+        <p class="task__description">Wash the dishes and table</p>
+      </section>
+    </main>
+    <div class="taskEditor">
+      <div class="inputBox">
+        <label for="title">Title:</label>
+        <input type="text" name="title" placeholder="New task title..." />
+      </div>
+      <div class="inputBox">
+        <label for="date">Time:</label>
+        <input type="datetime-local" name="date" id="datePicker" />
+      </div>
+      <div class="inputBox">
+        <label for="description">Description:</label>
+        <textarea name="description" id="" cols="30" rows="7" placeholder="New task description..."></textarea>
+      </div>
+      <div class="inputBoxButtons">
+        <button class="editorBtn addNewTaskBtn">Add</button>
+        <button class="editorBtn cancleAddingTask">Cancle</button>
+      </div>
+    </div>
+    <script src="./js/todo.js"></script>
+  </body>
+</html>
